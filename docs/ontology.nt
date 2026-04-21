@@ -1,0 +1,779 @@
+<http://www.owl-ontologies.com/foaf#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.owl-ontologies.com/foaf#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/foaf#belongsToCategory
+<http://www.owl-ontologies.com/foaf#belongsToCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#belongsToCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#belongsToCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#RiskCategory> .
+<http://www.owl-ontologies.com/foaf#belongsToCategory> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToCategory" .
+# 
+# http://www.owl-ontologies.com/foaf#hasCompetentAuthority
+<http://www.owl-ontologies.com/foaf#hasCompetentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#hasCompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Manufacturer> .
+<http://www.owl-ontologies.com/foaf#hasCompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#CompetentAuthority> .
+<http://www.owl-ontologies.com/foaf#hasCompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "hasCompetentAuthority" .
+# 
+# http://www.owl-ontologies.com/foaf#hasCountry
+<http://www.owl-ontologies.com/foaf#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Manufacturer> .
+<http://www.owl-ontologies.com/foaf#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#Country> .
+<http://www.owl-ontologies.com/foaf#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry" .
+# 
+# http://www.owl-ontologies.com/foaf#hasManufacturer
+<http://www.owl-ontologies.com/foaf#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#Manufacturer> .
+<http://www.owl-ontologies.com/foaf#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "hasManufacturer" .
+# 
+# http://www.owl-ontologies.com/foaf#hasProbability
+<http://www.owl-ontologies.com/foaf#hasProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#hasProbability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#hasProbability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#Probability> .
+<http://www.owl-ontologies.com/foaf#hasProbability> <http://www.w3.org/2000/01/rdf-schema#label> "hasProbability" .
+# 
+# http://www.owl-ontologies.com/foaf#hasRiskClass
+<http://www.owl-ontologies.com/foaf#hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#RiskClass> .
+<http://www.owl-ontologies.com/foaf#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "hasRiskClass" .
+# 
+# http://www.owl-ontologies.com/foaf#hasSeverity
+<http://www.owl-ontologies.com/foaf#hasSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#hasSeverity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#hasSeverity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#Severity> .
+<http://www.owl-ontologies.com/foaf#hasSeverity> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeverity" .
+# 
+# http://www.owl-ontologies.com/foaf#hasStatus
+<http://www.owl-ontologies.com/foaf#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> .
+<http://www.owl-ontologies.com/foaf#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#FSCAStatus> .
+<http://www.owl-ontologies.com/foaf#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasStatus" .
+# 
+# http://www.owl-ontologies.com/foaf#involvesDevice
+<http://www.owl-ontologies.com/foaf#involvesDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "involvesDevice" .
+# 
+# http://www.owl-ontologies.com/foaf#materializesRisk
+<http://www.owl-ontologies.com/foaf#materializesRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#materializesRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#materializesRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#materializesRisk> <http://www.w3.org/2000/01/rdf-schema#label> "materializesRisk" .
+# 
+# http://www.owl-ontologies.com/foaf#regulatedBy
+<http://www.owl-ontologies.com/foaf#regulatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#regulatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#regulatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#RegulatoryFramework> .
+<http://www.owl-ontologies.com/foaf#regulatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "regulatedBy" .
+# 
+# http://www.owl-ontologies.com/foaf#reportedBy
+<http://www.owl-ontologies.com/foaf#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#Manufacturer> .
+<http://www.owl-ontologies.com/foaf#reportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "reportedBy" .
+# 
+# http://www.owl-ontologies.com/foaf#triggeredByIncident
+<http://www.owl-ontologies.com/foaf#triggeredByIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/foaf#triggeredByIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> .
+<http://www.owl-ontologies.com/foaf#triggeredByIncident> <http://www.w3.org/2000/01/rdf-schema#label> "triggeredByIncident" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/foaf#actionDate
+<http://www.owl-ontologies.com/foaf#actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#actionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#FSCAStatus> .
+<http://www.owl-ontologies.com/foaf#actionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.owl-ontologies.com/foaf#actionDate> <http://www.w3.org/2000/01/rdf-schema#label> "actionDate" .
+# 
+# http://www.owl-ontologies.com/foaf#authorizationNumber
+<http://www.owl-ontologies.com/foaf#authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Manufacturer> .
+<http://www.owl-ontologies.com/foaf#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "authorizationNumber" .
+# 
+# http://www.owl-ontologies.com/foaf#closureDate
+<http://www.owl-ontologies.com/foaf#closureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#closureDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#FSCAStatus> .
+<http://www.owl-ontologies.com/foaf#closureDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.owl-ontologies.com/foaf#closureDate> <http://www.w3.org/2000/01/rdf-schema#label> "closureDate" .
+# 
+# http://www.owl-ontologies.com/foaf#contactEmail
+<http://www.owl-ontologies.com/foaf#contactEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#contactEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Manufacturer> .
+<http://www.owl-ontologies.com/foaf#contactEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#contactEmail> <http://www.w3.org/2000/01/rdf-schema#label> "contactEmail" .
+# 
+# http://www.owl-ontologies.com/foaf#detectionDate
+<http://www.owl-ontologies.com/foaf#detectionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#detectionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#detectionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.owl-ontologies.com/foaf#detectionDate> <http://www.w3.org/2000/01/rdf-schema#label> "detectionDate" .
+# 
+# http://www.owl-ontologies.com/foaf#deviceName
+<http://www.owl-ontologies.com/foaf#deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#deviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#deviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "deviceName" .
+# 
+# http://www.owl-ontologies.com/foaf#eudamedFSCARef
+<http://www.owl-ontologies.com/foaf#eudamedFSCARef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#eudamedFSCARef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#FSCAStatus> .
+<http://www.owl-ontologies.com/foaf#eudamedFSCARef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#eudamedFSCARef> <http://www.w3.org/2000/01/rdf-schema#label> "eudamedFCSARef" .
+# 
+# http://www.owl-ontologies.com/foaf#eudamedIncidentRef
+<http://www.owl-ontologies.com/foaf#eudamedIncidentRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#label> "eudamedIncidentRef" .
+# 
+# http://www.owl-ontologies.com/foaf#eudamedSRN
+<http://www.owl-ontologies.com/foaf#eudamedSRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Manufacturer> .
+<http://www.owl-ontologies.com/foaf#eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#label> "eudamedSRN" .
+# 
+# http://www.owl-ontologies.com/foaf#eventDate
+<http://www.owl-ontologies.com/foaf#eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#eventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#eventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.owl-ontologies.com/foaf#eventDate> <http://www.w3.org/2000/01/rdf-schema#label> "eventDate" .
+# 
+# http://www.owl-ontologies.com/foaf#imdrfCode
+<http://www.owl-ontologies.com/foaf#imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "imdrfCode" .
+# 
+# http://www.owl-ontologies.com/foaf#intentedPurpose
+<http://www.owl-ontologies.com/foaf#intentedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#intentedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#intentedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#intentedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "intentedPurpose" .
+# 
+# http://www.owl-ontologies.com/foaf#isActive
+<http://www.owl-ontologies.com/foaf#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.owl-ontologies.com/foaf#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "isActive" .
+# 
+# http://www.owl-ontologies.com/foaf#isIVD
+<http://www.owl-ontologies.com/foaf#isIVD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#isIVD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#isIVD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.owl-ontologies.com/foaf#isIVD> <http://www.w3.org/2000/01/rdf-schema#label> "isIVD" .
+# 
+# http://www.owl-ontologies.com/foaf#isImplantable
+<http://www.owl-ontologies.com/foaf#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.owl-ontologies.com/foaf#isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "isImplantable" .
+# 
+# http://www.owl-ontologies.com/foaf#isReusable
+<http://www.owl-ontologies.com/foaf#isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#isReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#isReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.owl-ontologies.com/foaf#isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "isReusable" .
+# 
+# http://www.owl-ontologies.com/foaf#name
+<http://www.owl-ontologies.com/foaf#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Manufacturer> .
+<http://www.owl-ontologies.com/foaf#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# http://www.owl-ontologies.com/foaf#patientAge
+<http://www.owl-ontologies.com/foaf#patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#patientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.owl-ontologies.com/foaf#patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "patientAge" .
+# 
+# http://www.owl-ontologies.com/foaf#reportDate
+<http://www.owl-ontologies.com/foaf#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.owl-ontologies.com/foaf#reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "reportDate" .
+# 
+# http://www.owl-ontologies.com/foaf#riskName
+<http://www.owl-ontologies.com/foaf#riskName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#riskName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#riskName> <http://www.w3.org/2000/01/rdf-schema#label> "riskName" .
+# 
+# http://www.owl-ontologies.com/foaf#scope
+<http://www.owl-ontologies.com/foaf#scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#scope> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#FSCAStatus> .
+<http://www.owl-ontologies.com/foaf#scope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope" .
+# 
+# http://www.owl-ontologies.com/foaf#udiDI
+<http://www.owl-ontologies.com/foaf#udiDI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/foaf#udiDI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#udiDI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/foaf#udiDI> <http://www.w3.org/2000/01/rdf-schema#label> "udiDI" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/foaf#ActiveDevice
+<http://www.owl-ontologies.com/foaf#ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device whose operation depends on a source of electrical energy or any source of power other than that generated by the human body or gravity"@en .
+<http://www.owl-ontologies.com/foaf#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ActiveDevice"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ActiveImplant
+<http://www.owl-ontologies.com/foaf#ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#ActiveDevice> .
+<http://www.owl-ontologies.com/foaf#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#ImplantableDevice> .
+<http://www.owl-ontologies.com/foaf#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#label> "ActiveImplant" .
+# 
+# http://www.owl-ontologies.com/foaf#ClassA
+<http://www.owl-ontologies.com/foaf#ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ClassA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#IVDRRiskClass> .
+<http://www.owl-ontologies.com/foaf#ClassA> <http://www.w3.org/2000/01/rdf-schema#comment> "Lowest IVDR risk"@en .
+<http://www.owl-ontologies.com/foaf#ClassA> <http://www.w3.org/2000/01/rdf-schema#label> "ClassA"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ClassB
+<http://www.owl-ontologies.com/foaf#ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ClassB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#IVDRRiskClass> .
+<http://www.owl-ontologies.com/foaf#ClassB> <http://www.w3.org/2000/01/rdf-schema#comment> "Low-medium IVDR risk"@en .
+<http://www.owl-ontologies.com/foaf#ClassB> <http://www.w3.org/2000/01/rdf-schema#label> "ClassB"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ClassC
+<http://www.owl-ontologies.com/foaf#ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ClassC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#IVDRRiskClass> .
+<http://www.owl-ontologies.com/foaf#ClassC> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium-high IVDR risk"@en .
+<http://www.owl-ontologies.com/foaf#ClassC> <http://www.w3.org/2000/01/rdf-schema#label> "ClassC"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ClassD
+<http://www.owl-ontologies.com/foaf#ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ClassD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#IVDRRiskClass> .
+<http://www.owl-ontologies.com/foaf#ClassD> <http://www.w3.org/2000/01/rdf-schema#comment> "Highest IVDR risk"@en .
+<http://www.owl-ontologies.com/foaf#ClassD> <http://www.w3.org/2000/01/rdf-schema#label> "ClassD"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ClassI
+<http://www.owl-ontologies.com/foaf#ClassI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ClassI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#MDRiskClass> .
+<http://www.owl-ontologies.com/foaf#ClassI> <http://www.w3.org/2000/01/rdf-schema#comment> "Low risk"@en .
+<http://www.owl-ontologies.com/foaf#ClassI> <http://www.w3.org/2000/01/rdf-schema#label> "ClassI"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ClassIII
+<http://www.owl-ontologies.com/foaf#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ClassIII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#MDRiskClass> .
+<http://www.owl-ontologies.com/foaf#ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "Highest risk"@en .
+<http://www.owl-ontologies.com/foaf#ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "ClassIII"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ClassIIa
+<http://www.owl-ontologies.com/foaf#ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#MDRiskClass> .
+<http://www.owl-ontologies.com/foaf#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium-low risk"@en .
+<http://www.owl-ontologies.com/foaf#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "ClassIIa"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ClassIIb
+<http://www.owl-ontologies.com/foaf#ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#MDRiskClass> .
+<http://www.owl-ontologies.com/foaf#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium-high risk"@en .
+<http://www.owl-ontologies.com/foaf#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "ClassIIb"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Close
+<http://www.owl-ontologies.com/foaf#Close> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Close> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#FSCAStatus> .
+<http://www.owl-ontologies.com/foaf#Close> <http://www.w3.org/2000/01/rdf-schema#comment> "Close"@en .
+<http://www.owl-ontologies.com/foaf#Close> <http://www.w3.org/2000/01/rdf-schema#label> "Close"@en .
+# 
+# http://www.owl-ontologies.com/foaf#CompetentAuthority
+<http://www.owl-ontologies.com/foaf#CompetentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "CompetentAuthority" .
+# 
+# http://www.owl-ontologies.com/foaf#ContaminationRisk
+<http://www.owl-ontologies.com/foaf#ContaminationRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Reagent contamination"@en .
+<http://www.owl-ontologies.com/foaf#ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Contamination Risk"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Country
+<http://www.owl-ontologies.com/foaf#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Geopolitical country, linked to the EU Named Authority List"@en .
+<http://www.owl-ontologies.com/foaf#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Critical
+<http://www.owl-ontologies.com/foaf#Critical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Critical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Severity> .
+<http://www.owl-ontologies.com/foaf#Critical> <http://www.w3.org/2000/01/rdf-schema#comment> "Critical"@en .
+<http://www.owl-ontologies.com/foaf#Critical> <http://www.w3.org/2000/01/rdf-schema#label> "Critical"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Device
+<http://www.owl-ontologies.com/foaf#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device or in-vitro diagnostic device as defined by Regulation (EU) 2017/745 or Regulation (EU) 2017/746."@en .
+<http://www.owl-ontologies.com/foaf#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+# 
+# http://www.owl-ontologies.com/foaf#DeviceFailure
+<http://www.owl-ontologies.com/foaf#DeviceFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RiskCategory> .
+<http://www.owl-ontologies.com/foaf#DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#comment> "Device Failure"@en .
+<http://www.owl-ontologies.com/foaf#DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#label> "DeviceFailure"@en .
+# 
+# http://www.owl-ontologies.com/foaf#DevicePerformance
+<http://www.owl-ontologies.com/foaf#DevicePerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#DevicePerformance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#DevicePerformance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RiskCategory> .
+<http://www.owl-ontologies.com/foaf#DevicePerformance> <http://www.w3.org/2000/01/rdf-schema#comment> "Device Performance"@en .
+<http://www.owl-ontologies.com/foaf#DevicePerformance> <http://www.w3.org/2000/01/rdf-schema#label> "DevicePerformance"@en .
+# 
+# http://www.owl-ontologies.com/foaf#DeviceSafety
+<http://www.owl-ontologies.com/foaf#DeviceSafety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#DeviceSafety> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#DeviceSafety> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RiskCategory> .
+<http://www.owl-ontologies.com/foaf#DeviceSafety> <http://www.w3.org/2000/01/rdf-schema#comment> "Device safety"@en .
+<http://www.owl-ontologies.com/foaf#DeviceSafety> <http://www.w3.org/2000/01/rdf-schema#label> "DeviceSafety"@en .
+# 
+# http://www.owl-ontologies.com/foaf#DiagnosticError
+<http://www.owl-ontologies.com/foaf#DiagnosticError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#DiagnosticError> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#DiagnosticError> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RiskCategory> .
+<http://www.owl-ontologies.com/foaf#DiagnosticError> <http://www.w3.org/2000/01/rdf-schema#comment> "Diagnostic Error"@en .
+<http://www.owl-ontologies.com/foaf#DiagnosticError> <http://www.w3.org/2000/01/rdf-schema#label> "DiagnosticError"@en .
+# 
+# http://www.owl-ontologies.com/foaf#DiagnosticRisk
+<http://www.owl-ontologies.com/foaf#DiagnosticRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "IVD diagnostic error"@en .
+<http://www.owl-ontologies.com/foaf#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Risk"@en .
+# 
+# http://www.owl-ontologies.com/foaf#FSCAStatus
+<http://www.owl-ontologies.com/foaf#FSCAStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#FSCAStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/foaf#Device> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/foaf#hasManufacturer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.owl-ontologies.com/foaf#FSCAStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/foaf#Device> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/foaf#hasRiskClass> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.owl-ontologies.com/foaf#FSCAStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "FSCA Status"@en .
+<http://www.owl-ontologies.com/foaf#FSCAStatus> <http://www.w3.org/2000/01/rdf-schema#label> "FSCAStatus"@en .
+# 
+# http://www.owl-ontologies.com/foaf#High
+<http://www.owl-ontologies.com/foaf#High> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#High> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Probability> .
+<http://www.owl-ontologies.com/foaf#High> <http://www.w3.org/2000/01/rdf-schema#comment> "High"@en .
+<http://www.owl-ontologies.com/foaf#High> <http://www.w3.org/2000/01/rdf-schema#label> "High"@en .
+# 
+# http://www.owl-ontologies.com/foaf#HighPriorityIncident
+<http://www.owl-ontologies.com/foaf#HighPriorityIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#HighPriorityIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#HighPriorityIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident derived by SWRL rule on Class III implantable device with Critical severity risk"@en .
+<http://www.owl-ontologies.com/foaf#HighPriorityIncident> <http://www.w3.org/2000/01/rdf-schema#label> "HighPriorityIncident"@en .
+# 
+# http://www.owl-ontologies.com/foaf#IVDR
+<http://www.owl-ontologies.com/foaf#IVDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#IVDR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RegulatoryFramework> .
+<http://www.owl-ontologies.com/foaf#IVDR> <http://www.w3.org/2000/01/rdf-schema#comment> "Regulation (EU) 2017/746"@en .
+<http://www.owl-ontologies.com/foaf#IVDR> <http://www.w3.org/2000/01/rdf-schema#label> "IVDR"@en .
+# 
+# http://www.owl-ontologies.com/foaf#IVDRRiskClass
+<http://www.owl-ontologies.com/foaf#IVDRRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RiskClass> .
+<http://www.owl-ontologies.com/foaf#IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk class under Regulation (EU) 2017/746"@en .
+<http://www.owl-ontologies.com/foaf#IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "IVDRRiskClass"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ImplantableActiveDevice
+<http://www.owl-ontologies.com/foaf#ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#ActiveImplant> .
+<http://www.owl-ontologies.com/foaf#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Subclass used in EUDAMED for high-energy active implants such as LVADs"@en .
+<http://www.owl-ontologies.com/foaf#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ImplantableActiveDevice"@en .
+# 
+# http://www.owl-ontologies.com/foaf#ImplantableDevice
+<http://www.owl-ontologies.com/foaf#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device intended to be totally introduced into the human body or to replace an epithelial surface or the surface of the eye"@en .
+<http://www.owl-ontologies.com/foaf#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ImplantableDevice"@en .
+# 
+# http://www.owl-ontologies.com/foaf#InSituCorreciton
+<http://www.owl-ontologies.com/foaf#InSituCorreciton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#InSituCorreciton> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> .
+<http://www.owl-ontologies.com/foaf#InSituCorreciton> <http://www.w3.org/2000/01/rdf-schema#comment> "In Situ Correction"@en .
+<http://www.owl-ontologies.com/foaf#InSituCorreciton> <http://www.w3.org/2000/01/rdf-schema#label> "In Situ Correciton"@en .
+# 
+# http://www.owl-ontologies.com/foaf#InVitroDiagnosticDevice
+<http://www.owl-ontologies.com/foaf#InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical device intended to be used for the in-vitro examination of specimens derived from the human body"@en .
+<http://www.owl-ontologies.com/foaf#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "InVitroDiagnosticDevice"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Incident
+<http://www.owl-ontologies.com/foaf#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "Notified incident involving a device"@en .
+<http://www.owl-ontologies.com/foaf#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Low
+<http://www.owl-ontologies.com/foaf#Low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Low> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Probability> .
+<http://www.owl-ontologies.com/foaf#Low> <http://www.w3.org/2000/01/rdf-schema#comment> "Low"@en .
+<http://www.owl-ontologies.com/foaf#Low> <http://www.w3.org/2000/01/rdf-schema#label> "Low"@en .
+# 
+# http://www.owl-ontologies.com/foaf#MDR
+<http://www.owl-ontologies.com/foaf#MDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#MDR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RegulatoryFramework> .
+<http://www.owl-ontologies.com/foaf#MDR> <http://www.w3.org/2000/01/rdf-schema#comment> "Regulation (EU) 2017/745"@en .
+<http://www.owl-ontologies.com/foaf#MDR> <http://www.w3.org/2000/01/rdf-schema#label> "MDR"@en .
+# 
+# http://www.owl-ontologies.com/foaf#MDRiskClass
+<http://www.owl-ontologies.com/foaf#MDRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#MDRiskClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RiskClass> .
+<http://www.owl-ontologies.com/foaf#MDRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk class under Regulation (EU) 2017/745"@en .
+<http://www.owl-ontologies.com/foaf#MDRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "MDRRiskClass"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Manufacturer
+<http://www.owl-ontologies.com/foaf#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal manufacturer of a medical device under MDR"@en .
+<http://www.owl-ontologies.com/foaf#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+# 
+# http://www.owl-ontologies.com/foaf#MaterialRisk
+<http://www.owl-ontologies.com/foaf#MaterialRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Wear/corrosion of implant materials"@en .
+<http://www.owl-ontologies.com/foaf#MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Material Risk"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Medium
+<http://www.owl-ontologies.com/foaf#Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Medium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Probability> .
+<http://www.owl-ontologies.com/foaf#Medium> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium"@en .
+<http://www.owl-ontologies.com/foaf#Medium> <http://www.w3.org/2000/01/rdf-schema#label> "Medium"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Moderate
+<http://www.owl-ontologies.com/foaf#Moderate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Moderate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Severity> .
+<http://www.owl-ontologies.com/foaf#Moderate> <http://www.w3.org/2000/01/rdf-schema#comment> "Moderate"@en .
+<http://www.owl-ontologies.com/foaf#Moderate> <http://www.w3.org/2000/01/rdf-schema#label> "Moderate"@en .
+# 
+# http://www.owl-ontologies.com/foaf#NearMissIncident
+<http://www.owl-ontologies.com/foaf#NearMissIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident without harm"@en .
+<http://www.owl-ontologies.com/foaf#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#label> "NearMissIncident"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Open
+<http://www.owl-ontologies.com/foaf#Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Open> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#FSCAStatus> .
+<http://www.owl-ontologies.com/foaf#Open> <http://www.w3.org/2000/01/rdf-schema#comment> "Open"@en .
+<http://www.owl-ontologies.com/foaf#Open> <http://www.w3.org/2000/01/rdf-schema#label> "Open"@en .
+# 
+# http://www.owl-ontologies.com/foaf#PatientHarm
+<http://www.owl-ontologies.com/foaf#PatientHarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#PatientHarm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#PatientHarm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RiskCategory> .
+<http://www.owl-ontologies.com/foaf#PatientHarm> <http://www.w3.org/2000/01/rdf-schema#comment> "Patient Harm"@en .
+<http://www.owl-ontologies.com/foaf#PatientHarm> <http://www.w3.org/2000/01/rdf-schema#label> "PatientHarm"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Probability
+<http://www.owl-ontologies.com/foaf#Probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Probability> <http://www.w3.org/2000/01/rdf-schema#label> "Probability" .
+# 
+# http://www.owl-ontologies.com/foaf#ProductQuality
+<http://www.owl-ontologies.com/foaf#ProductQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#ProductQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#ProductQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#RiskCategory> .
+<http://www.owl-ontologies.com/foaf#ProductQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "Product Quality"@en .
+<http://www.owl-ontologies.com/foaf#ProductQuality> <http://www.w3.org/2000/01/rdf-schema#label> "ProductQuality"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Recall
+<http://www.owl-ontologies.com/foaf#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> .
+<http://www.owl-ontologies.com/foaf#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "Recall"@en .
+<http://www.owl-ontologies.com/foaf#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
+# 
+# http://www.owl-ontologies.com/foaf#RegulatoryFramework
+<http://www.owl-ontologies.com/foaf#RegulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "European regulation applicable to a device"@en .
+<http://www.owl-ontologies.com/foaf#RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "RegulatoryFramework"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Risk
+<http://www.owl-ontologies.com/foaf#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "Identified risk associated with a medical device according to IMDRF Adverse Event Terminology"@en .
+<http://www.owl-ontologies.com/foaf#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+# 
+# http://www.owl-ontologies.com/foaf#RiskCategory
+<http://www.owl-ontologies.com/foaf#RiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#RiskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "High-level IMDRF risk category"@en .
+<http://www.owl-ontologies.com/foaf#RiskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "RiskCategory"@en .
+# 
+# http://www.owl-ontologies.com/foaf#RiskClass
+<http://www.owl-ontologies.com/foaf#RiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#RiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Regulatory risk classification of a medical device"@en .
+<http://www.owl-ontologies.com/foaf#RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Class"@en .
+# 
+# http://www.owl-ontologies.com/foaf#SafetyAlert
+<http://www.owl-ontologies.com/foaf#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> .
+<http://www.owl-ontologies.com/foaf#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety Alert" .
+<http://www.owl-ontologies.com/foaf#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert"@en .
+# 
+# http://www.owl-ontologies.com/foaf#SelfTestDevice
+<http://www.owl-ontologies.com/foaf#SelfTestDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#InVitroDiagnosticDevice> .
+<http://www.owl-ontologies.com/foaf#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "IVD intended by the manufacturer to be used by laypersons in a home environment"@en .
+<http://www.owl-ontologies.com/foaf#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#label> "SelfTestDevice"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Serious
+<http://www.owl-ontologies.com/foaf#Serious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Serious> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Severity> .
+<http://www.owl-ontologies.com/foaf#Serious> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious"@en .
+<http://www.owl-ontologies.com/foaf#Serious> <http://www.w3.org/2000/01/rdf-schema#label> "Serious"@en .
+# 
+# http://www.owl-ontologies.com/foaf#SeriousIncident
+<http://www.owl-ontologies.com/foaf#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Incident> .
+<http://www.owl-ontologies.com/foaf#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious incident per MDR"@en .
+<http://www.owl-ontologies.com/foaf#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "SeriousIncident"@en .
+# 
+# http://www.owl-ontologies.com/foaf#Severity
+<http://www.owl-ontologies.com/foaf#Severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#Severity> <http://www.w3.org/2000/01/rdf-schema#comment> "Qualitative severity level of a risk"@en .
+<http://www.owl-ontologies.com/foaf#Severity> <http://www.w3.org/2000/01/rdf-schema#label> "Severity"@en .
+# 
+# http://www.owl-ontologies.com/foaf#SingleUseDevice
+<http://www.owl-ontologies.com/foaf#SingleUseDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Device> .
+<http://www.owl-ontologies.com/foaf#SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device intended to be used on one individual during a single procedure"@en .
+<http://www.owl-ontologies.com/foaf#SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#label> "SingleUseDevice"@en .
+# 
+# http://www.owl-ontologies.com/foaf#SoftwareRisk
+<http://www.owl-ontologies.com/foaf#SoftwareRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#Risk> .
+<http://www.owl-ontologies.com/foaf#SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Software-related failure"@en .
+<http://www.owl-ontologies.com/foaf#SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Software Risk"@en .
+# 
+# http://www.owl-ontologies.com/foaf#UserNotice
+<http://www.owl-ontologies.com/foaf#UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> .
+<http://www.owl-ontologies.com/foaf#UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "User Notice" .
+<http://www.owl-ontologies.com/foaf#UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "User Notice"@en .
+# 
+# http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)
+<http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> <http://www.w3.org/2000/01/rdf-schema#comment> "A FSCA as defined in MDR"@en .
+<http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> <http://www.w3.org/2000/01/rdf-schema#label> "CorrectiveAction"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.owl-ontologies.com/d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.owl-ontologies.com/i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.owl-ontologies.com/rc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.owl-ontologies.com/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.owl-ontologies.com/s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.owl-ontologies.com/detectDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.owl-ontologies.com/ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.owl-ontologies.com/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.owl-ontologies.com/closeDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid12 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid12 <http://www.w3.org/2003/11/swrl#body> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/s> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#Critical> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/s> .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/r> .
+_:genid16 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/foaf#hasSeverity> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/r> .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
+_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/foaf#materializesRisk> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/rc> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#ClassIII> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/rc> .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/foaf#hasRiskClass> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> .
+_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#ImplantableDevice> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/d> .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
+_:genid26 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/foaf#involvesDevice> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
+_:genid28 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#Incident> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/2003/11/swrl#head> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
+_:genid30 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#SeriousIncident> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid3 <http://www.w3.org/2003/11/swrl#body> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> .
+_:genid5 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/foaf#isActive> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> .
+_:genid7 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/foaf#isImplantable> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> .
+_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#Device> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/2003/11/swrl#head> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> .
+_:genid11 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#ActiveImplant> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid31 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid31 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid31 <http://www.w3.org/2003/11/swrl#body> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#arguments> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/closeDate> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/detectDate> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/closeDate> .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/status> .
+_:genid37 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/foaf#closureDate> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/status> .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/ca> .
+_:genid39 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/foaf#hasStatus> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/ca> .
+_:genid41 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/detectDate> .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
+_:genid43 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/foaf#detectionDate> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
+_:genid45 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#Incident> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/2003/11/swrl#head> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/status> .
+_:genid47 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#Open> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

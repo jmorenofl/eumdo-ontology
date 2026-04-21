@@ -1,0 +1,863 @@
+@prefix : <http://www.owl-ontologies.com/foaf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.owl-ontologies.com/foaf#> .
+
+<http://www.owl-ontologies.com/foaf#> rdf:type owl:Ontology ;
+                                       <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.owl-ontologies.com/foaf#belongsToCategory
+:belongsToCategory rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Risk ;
+                   rdfs:range :RiskCategory ;
+                   rdfs:label "belongsToCategory" .
+
+
+###  http://www.owl-ontologies.com/foaf#hasCompetentAuthority
+:hasCompetentAuthority rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Manufacturer ;
+                       rdfs:range :CompetentAuthority ;
+                       rdfs:label "hasCompetentAuthority" .
+
+
+###  http://www.owl-ontologies.com/foaf#hasCountry
+:hasCountry rdf:type owl:ObjectProperty ;
+            rdfs:domain :Manufacturer ;
+            rdfs:range :Country ;
+            rdfs:label "hasCountry" .
+
+
+###  http://www.owl-ontologies.com/foaf#hasManufacturer
+:hasManufacturer rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Device ;
+                 rdfs:range :Manufacturer ;
+                 rdfs:label "hasManufacturer" .
+
+
+###  http://www.owl-ontologies.com/foaf#hasProbability
+:hasProbability rdf:type owl:ObjectProperty ;
+                rdfs:domain :Risk ;
+                rdfs:range :Probability ;
+                rdfs:label "hasProbability" .
+
+
+###  http://www.owl-ontologies.com/foaf#hasRiskClass
+:hasRiskClass rdf:type owl:ObjectProperty ;
+              rdfs:domain :Device ;
+              rdfs:range :RiskClass ;
+              rdfs:label "hasRiskClass" .
+
+
+###  http://www.owl-ontologies.com/foaf#hasSeverity
+:hasSeverity rdf:type owl:ObjectProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range :Severity ;
+             rdfs:label "hasSeverity" .
+
+
+###  http://www.owl-ontologies.com/foaf#hasStatus
+:hasStatus rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> ;
+           rdfs:range :FSCAStatus ;
+           rdfs:label "hasStatus" .
+
+
+###  http://www.owl-ontologies.com/foaf#involvesDevice
+:involvesDevice rdf:type owl:ObjectProperty ;
+                rdfs:domain :Incident ;
+                rdfs:range :Device ;
+                rdfs:label "involvesDevice" .
+
+
+###  http://www.owl-ontologies.com/foaf#materializesRisk
+:materializesRisk rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Incident ;
+                  rdfs:range :Risk ;
+                  rdfs:label "materializesRisk" .
+
+
+###  http://www.owl-ontologies.com/foaf#regulatedBy
+:regulatedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Device ;
+             rdfs:range :RegulatoryFramework ;
+             rdfs:label "regulatedBy" .
+
+
+###  http://www.owl-ontologies.com/foaf#reportedBy
+:reportedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range :Manufacturer ;
+            rdfs:label "reportedBy" .
+
+
+###  http://www.owl-ontologies.com/foaf#triggeredByIncident
+:triggeredByIncident rdf:type owl:ObjectProperty ;
+                     rdfs:range <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> ;
+                     rdfs:label "triggeredByIncident" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.owl-ontologies.com/foaf#actionDate
+:actionDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :FSCAStatus ;
+            rdfs:range xsd:date ;
+            rdfs:label "actionDate" .
+
+
+###  http://www.owl-ontologies.com/foaf#authorizationNumber
+:authorizationNumber rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Manufacturer ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "authorizationNumber" .
+
+
+###  http://www.owl-ontologies.com/foaf#closureDate
+:closureDate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :FSCAStatus ;
+             rdfs:range xsd:date ;
+             rdfs:label "closureDate" .
+
+
+###  http://www.owl-ontologies.com/foaf#contactEmail
+:contactEmail rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Manufacturer ;
+              rdfs:range xsd:string ;
+              rdfs:label "contactEmail" .
+
+
+###  http://www.owl-ontologies.com/foaf#detectionDate
+:detectionDate rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range xsd:date ;
+               rdfs:label "detectionDate" .
+
+
+###  http://www.owl-ontologies.com/foaf#deviceName
+:deviceName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Device ;
+            rdfs:range xsd:string ;
+            rdfs:label "deviceName" .
+
+
+###  http://www.owl-ontologies.com/foaf#eudamedFSCARef
+:eudamedFSCARef rdf:type owl:DatatypeProperty ;
+                rdfs:domain :FSCAStatus ;
+                rdfs:range xsd:string ;
+                rdfs:label "eudamedFCSARef" .
+
+
+###  http://www.owl-ontologies.com/foaf#eudamedIncidentRef
+:eudamedIncidentRef rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Incident ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "eudamedIncidentRef" .
+
+
+###  http://www.owl-ontologies.com/foaf#eudamedSRN
+:eudamedSRN rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Manufacturer ;
+            rdfs:range xsd:string ;
+            rdfs:label "eudamedSRN" .
+
+
+###  http://www.owl-ontologies.com/foaf#eventDate
+:eventDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Incident ;
+           rdfs:range xsd:date ;
+           rdfs:label "eventDate" .
+
+
+###  http://www.owl-ontologies.com/foaf#imdrfCode
+:imdrfCode rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string ;
+           rdfs:label "imdrfCode" .
+
+
+###  http://www.owl-ontologies.com/foaf#intentedPurpose
+:intentedPurpose rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Device ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "intentedPurpose" .
+
+
+###  http://www.owl-ontologies.com/foaf#isActive
+:isActive rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Device ;
+          rdfs:range xsd:boolean ;
+          rdfs:label "isActive" .
+
+
+###  http://www.owl-ontologies.com/foaf#isIVD
+:isIVD rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Device ;
+       rdfs:range xsd:boolean ;
+       rdfs:label "isIVD" .
+
+
+###  http://www.owl-ontologies.com/foaf#isImplantable
+:isImplantable rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Device ;
+               rdfs:range xsd:boolean ;
+               rdfs:label "isImplantable" .
+
+
+###  http://www.owl-ontologies.com/foaf#isReusable
+:isReusable rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Device ;
+            rdfs:range xsd:boolean ;
+            rdfs:label "isReusable" .
+
+
+###  http://www.owl-ontologies.com/foaf#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Manufacturer ;
+      rdfs:range xsd:string ;
+      rdfs:label "name" .
+
+
+###  http://www.owl-ontologies.com/foaf#patientAge
+:patientAge rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range xsd:integer ;
+            rdfs:label "patientAge" .
+
+
+###  http://www.owl-ontologies.com/foaf#reportDate
+:reportDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range xsd:date ;
+            rdfs:label "reportDate" .
+
+
+###  http://www.owl-ontologies.com/foaf#riskName
+:riskName rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "riskName" .
+
+
+###  http://www.owl-ontologies.com/foaf#scope
+:scope rdf:type owl:DatatypeProperty ;
+       rdfs:domain :FSCAStatus ;
+       rdfs:range xsd:string ;
+       rdfs:label "scope" .
+
+
+###  http://www.owl-ontologies.com/foaf#udiDI
+:udiDI rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Device ;
+       rdfs:range xsd:string ;
+       rdfs:label "udiDI" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.owl-ontologies.com/foaf#ActiveDevice
+:ActiveDevice rdf:type owl:Class ;
+              rdfs:subClassOf :Device ;
+              rdfs:comment "Device whose operation depends on a source of electrical energy or any source of power other than that generated by the human body or gravity"@en ;
+              rdfs:label "ActiveDevice"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ActiveImplant
+:ActiveImplant rdf:type owl:Class ;
+               rdfs:subClassOf :ActiveDevice ,
+                               :ImplantableDevice ;
+               rdfs:label "ActiveImplant" .
+
+
+###  http://www.owl-ontologies.com/foaf#ClassA
+:ClassA rdf:type owl:Class ;
+        rdfs:subClassOf :IVDRRiskClass ;
+        rdfs:comment "Lowest IVDR risk"@en ;
+        rdfs:label "ClassA"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ClassB
+:ClassB rdf:type owl:Class ;
+        rdfs:subClassOf :IVDRRiskClass ;
+        rdfs:comment "Low-medium IVDR risk"@en ;
+        rdfs:label "ClassB"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ClassC
+:ClassC rdf:type owl:Class ;
+        rdfs:subClassOf :IVDRRiskClass ;
+        rdfs:comment "Medium-high IVDR risk"@en ;
+        rdfs:label "ClassC"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ClassD
+:ClassD rdf:type owl:Class ;
+        rdfs:subClassOf :IVDRRiskClass ;
+        rdfs:comment "Highest IVDR risk"@en ;
+        rdfs:label "ClassD"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ClassI
+:ClassI rdf:type owl:Class ;
+        rdfs:subClassOf :MDRiskClass ;
+        rdfs:comment "Low risk"@en ;
+        rdfs:label "ClassI"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ClassIII
+:ClassIII rdf:type owl:Class ;
+          rdfs:subClassOf :MDRiskClass ;
+          rdfs:comment "Highest risk"@en ;
+          rdfs:label "ClassIII"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ClassIIa
+:ClassIIa rdf:type owl:Class ;
+          rdfs:subClassOf :MDRiskClass ;
+          rdfs:comment "Medium-low risk"@en ;
+          rdfs:label "ClassIIa"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ClassIIb
+:ClassIIb rdf:type owl:Class ;
+          rdfs:subClassOf :MDRiskClass ;
+          rdfs:comment "Medium-high risk"@en ;
+          rdfs:label "ClassIIb"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Close
+:Close rdf:type owl:Class ;
+       rdfs:subClassOf :FSCAStatus ;
+       rdfs:comment "Close"@en ;
+       rdfs:label "Close"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#CompetentAuthority
+:CompetentAuthority rdf:type owl:Class ;
+                    rdfs:label "CompetentAuthority" .
+
+
+###  http://www.owl-ontologies.com/foaf#ContaminationRisk
+:ContaminationRisk rdf:type owl:Class ;
+                   rdfs:subClassOf :Risk ;
+                   rdfs:comment "Reagent contamination"@en ;
+                   rdfs:label "Contamination Risk"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "Geopolitical country, linked to the EU Named Authority List"@en ;
+         rdfs:label "Country"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Critical
+:Critical rdf:type owl:Class ;
+          rdfs:subClassOf :Severity ;
+          rdfs:comment "Critical"@en ;
+          rdfs:label "Critical"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Device
+:Device rdf:type owl:Class ;
+        rdfs:comment "A medical device or in-vitro diagnostic device as defined by Regulation (EU) 2017/745 or Regulation (EU) 2017/746."@en ;
+        rdfs:label "Device"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#DeviceFailure
+:DeviceFailure rdf:type owl:Class ;
+               rdfs:subClassOf :Risk ,
+                               :RiskCategory ;
+               rdfs:comment "Device Failure"@en ;
+               rdfs:label "DeviceFailure"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#DevicePerformance
+:DevicePerformance rdf:type owl:Class ;
+                   rdfs:subClassOf :Risk ,
+                                   :RiskCategory ;
+                   rdfs:comment "Device Performance"@en ;
+                   rdfs:label "DevicePerformance"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#DeviceSafety
+:DeviceSafety rdf:type owl:Class ;
+              rdfs:subClassOf :Risk ,
+                              :RiskCategory ;
+              rdfs:comment "Device safety"@en ;
+              rdfs:label "DeviceSafety"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#DiagnosticError
+:DiagnosticError rdf:type owl:Class ;
+                 rdfs:subClassOf :Risk ,
+                                 :RiskCategory ;
+                 rdfs:comment "Diagnostic Error"@en ;
+                 rdfs:label "DiagnosticError"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#DiagnosticRisk
+:DiagnosticRisk rdf:type owl:Class ;
+                rdfs:subClassOf :Risk ;
+                rdfs:comment "IVD diagnostic error"@en ;
+                rdfs:label "Diagnostic Risk"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#FSCAStatus
+:FSCAStatus rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasManufacturer ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Device
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasRiskClass ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Device
+                            ] ;
+            rdfs:comment "FSCA Status"@en ;
+            rdfs:label "FSCAStatus"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#High
+:High rdf:type owl:Class ;
+      rdfs:subClassOf :Probability ;
+      rdfs:comment "High"@en ;
+      rdfs:label "High"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#HighPriorityIncident
+:HighPriorityIncident rdf:type owl:Class ;
+                      rdfs:subClassOf :Incident ;
+                      rdfs:comment "Incident derived by SWRL rule on Class III implantable device with Critical severity risk"@en ;
+                      rdfs:label "HighPriorityIncident"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#IVDR
+:IVDR rdf:type owl:Class ;
+      rdfs:subClassOf :RegulatoryFramework ;
+      rdfs:comment "Regulation (EU) 2017/746"@en ;
+      rdfs:label "IVDR"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#IVDRRiskClass
+:IVDRRiskClass rdf:type owl:Class ;
+               rdfs:subClassOf :RiskClass ;
+               rdfs:comment "Risk class under Regulation (EU) 2017/746"@en ;
+               rdfs:label "IVDRRiskClass"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ImplantableActiveDevice
+:ImplantableActiveDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :ActiveImplant ;
+                         rdfs:comment "Subclass used in EUDAMED for high-energy active implants such as LVADs"@en ;
+                         rdfs:label "ImplantableActiveDevice"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#ImplantableDevice
+:ImplantableDevice rdf:type owl:Class ;
+                   rdfs:subClassOf :Device ;
+                   rdfs:comment "Device intended to be totally introduced into the human body or to replace an epithelial surface or the surface of the eye"@en ;
+                   rdfs:label "ImplantableDevice"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#InSituCorreciton
+:InSituCorreciton rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> ;
+                  rdfs:comment "In Situ Correction"@en ;
+                  rdfs:label "In Situ Correciton"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#InVitroDiagnosticDevice
+:InVitroDiagnosticDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :Device ;
+                         rdfs:comment "Medical device intended to be used for the in-vitro examination of specimens derived from the human body"@en ;
+                         rdfs:label "InVitroDiagnosticDevice"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Incident
+:Incident rdf:type owl:Class ;
+          rdfs:comment "Notified incident involving a device"@en ;
+          rdfs:label "Incident"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Low
+:Low rdf:type owl:Class ;
+     rdfs:subClassOf :Probability ;
+     rdfs:comment "Low"@en ;
+     rdfs:label "Low"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#MDR
+:MDR rdf:type owl:Class ;
+     rdfs:subClassOf :RegulatoryFramework ;
+     rdfs:comment "Regulation (EU) 2017/745"@en ;
+     rdfs:label "MDR"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#MDRiskClass
+:MDRiskClass rdf:type owl:Class ;
+             rdfs:subClassOf :RiskClass ;
+             rdfs:comment "Risk class under Regulation (EU) 2017/745"@en ;
+             rdfs:label "MDRRiskClass"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              rdfs:comment "Legal manufacturer of a medical device under MDR"@en ;
+              rdfs:label "Manufacturer"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#MaterialRisk
+:MaterialRisk rdf:type owl:Class ;
+              rdfs:subClassOf :Risk ;
+              rdfs:comment "Wear/corrosion of implant materials"@en ;
+              rdfs:label "Material Risk"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Medium
+:Medium rdf:type owl:Class ;
+        rdfs:subClassOf :Probability ;
+        rdfs:comment "Medium"@en ;
+        rdfs:label "Medium"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Moderate
+:Moderate rdf:type owl:Class ;
+          rdfs:subClassOf :Severity ;
+          rdfs:comment "Moderate"@en ;
+          rdfs:label "Moderate"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#NearMissIncident
+:NearMissIncident rdf:type owl:Class ;
+                  rdfs:subClassOf :Incident ;
+                  rdfs:comment "Incident without harm"@en ;
+                  rdfs:label "NearMissIncident"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Open
+:Open rdf:type owl:Class ;
+      rdfs:subClassOf :FSCAStatus ;
+      rdfs:comment "Open"@en ;
+      rdfs:label "Open"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#PatientHarm
+:PatientHarm rdf:type owl:Class ;
+             rdfs:subClassOf :Risk ,
+                             :RiskCategory ;
+             rdfs:comment "Patient Harm"@en ;
+             rdfs:label "PatientHarm"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Probability
+:Probability rdf:type owl:Class ;
+             rdfs:label "Probability" .
+
+
+###  http://www.owl-ontologies.com/foaf#ProductQuality
+:ProductQuality rdf:type owl:Class ;
+                rdfs:subClassOf :Risk ,
+                                :RiskCategory ;
+                rdfs:comment "Product Quality"@en ;
+                rdfs:label "ProductQuality"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Recall
+:Recall rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> ;
+        rdfs:comment "Recall"@en ;
+        rdfs:label "Recall"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#RegulatoryFramework
+:RegulatoryFramework rdf:type owl:Class ;
+                     rdfs:comment "European regulation applicable to a device"@en ;
+                     rdfs:label "RegulatoryFramework"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Risk
+:Risk rdf:type owl:Class ;
+      rdfs:comment "Identified risk associated with a medical device according to IMDRF Adverse Event Terminology"@en ;
+      rdfs:label "Risk"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#RiskCategory
+:RiskCategory rdf:type owl:Class ;
+              rdfs:comment "High-level IMDRF risk category"@en ;
+              rdfs:label "RiskCategory"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#RiskClass
+:RiskClass rdf:type owl:Class ;
+           rdfs:comment "Regulatory risk classification of a medical device"@en ;
+           rdfs:label "Risk Class"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#SafetyAlert
+:SafetyAlert rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> ;
+             rdfs:comment "Safety Alert" ;
+             rdfs:label "Safety Alert"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#SelfTestDevice
+:SelfTestDevice rdf:type owl:Class ;
+                rdfs:subClassOf :InVitroDiagnosticDevice ;
+                rdfs:comment "IVD intended by the manufacturer to be used by laypersons in a home environment"@en ;
+                rdfs:label "SelfTestDevice"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Serious
+:Serious rdf:type owl:Class ;
+         rdfs:subClassOf :Severity ;
+         rdfs:comment "Serious"@en ;
+         rdfs:label "Serious"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#SeriousIncident
+:SeriousIncident rdf:type owl:Class ;
+                 rdfs:subClassOf :Incident ;
+                 rdfs:comment "Serious incident per MDR"@en ;
+                 rdfs:label "SeriousIncident"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#Severity
+:Severity rdf:type owl:Class ;
+          rdfs:comment "Qualitative severity level of a risk"@en ;
+          rdfs:label "Severity"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#SingleUseDevice
+:SingleUseDevice rdf:type owl:Class ;
+                 rdfs:subClassOf :Device ;
+                 rdfs:comment "Device intended to be used on one individual during a single procedure"@en ;
+                 rdfs:label "SingleUseDevice"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#SoftwareRisk
+:SoftwareRisk rdf:type owl:Class ;
+              rdfs:subClassOf :Risk ;
+              rdfs:comment "Software-related failure"@en ;
+              rdfs:label "Software Risk"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#UserNotice
+:UserNotice rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> ;
+            rdfs:comment "User Notice" ;
+            rdfs:label "User Notice"@en .
+
+
+###  http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)
+<http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> rdf:type owl:Class ;
+                                                            rdfs:comment "A FSCA as defined in MDR"@en ;
+                                                            rdfs:label "CorrectiveAction"@en .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.owl-ontologies.com/d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.owl-ontologies.com/i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.owl-ontologies.com/rc> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.owl-ontologies.com/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.owl-ontologies.com/s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.owl-ontologies.com/detectDate> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.owl-ontologies.com/ca> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.owl-ontologies.com/status> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.owl-ontologies.com/closeDate> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :involvesDevice ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/d>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :ImplantableDevice ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRiskClass ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/rc>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> :ClassIII ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/rc>
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :materializesRisk ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/r>
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSeverity ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/r> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/s>
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#classPredicate> :Critical ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/s>
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest rdf:nil
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SeriousIncident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isImplantable ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :isActive ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ActiveImplant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :detectionDate ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/detectDate>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/foaf#CorrectiveAction(FCSA)> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/ca>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasStatus ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/ca> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/status>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :closureDate ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/status> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/closeDate>
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#arguments> ( <http://www.owl-ontologies.com/detectDate>
+                                                                                                                                                           <http://www.owl-ontologies.com/closeDate>
+                                                                                                                                                         )
+                                                                                                            ] ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Open ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/status>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
